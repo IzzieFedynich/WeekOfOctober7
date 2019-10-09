@@ -61,36 +61,41 @@ print(formatter %(formatter, formatter, formatter, formatter))
 
 # Why did I use %r instead of %s
 
+
 # Time for some strange stuff in the world of printing...
 
 days = "Mon Tue Wed Thu Fri Sat Sun"
 months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+# \n breaks and adds a space
 
 print("Here are the days:", days)
 print("Here are the months:", months)
 
-if print("""
+# """ means something and is confusing the computer
+print("""
 There's something going on here.
 With the three double-quotes.
 We'll be able to type as much as we like
 Even 4 lines if we want, or 5, or 6.
 """)
 
-#What if I didn't like Jan being listed on the line with the rest of the
+# What if I didn't like Jan being listed on the line with the rest of the
 # text and away from the other months? How could I fix that?
 
 # More escaping
 
+# Cats
+# \t tabs the text over
 tabbyCat = "\tI'm tabbed in."
 persianCat = "I'm split\non a line."
 backslashCat = "I'm \\ a \\ cat."
-taskCat= """
+taskCat = """
 I'll make a list:
 \t* Cat food
 \t* Fishies
 \t* Catnip\n\t* Grass
 """
-
+# printing the cats
 print(tabbyCat)
 print(persianCat)
 print(backslashCat)
@@ -116,6 +121,6 @@ print(taskCat)
 
 # What's the following code do:
 # While True:
-#       for i in ["/","-","|","\\","|"]
-            print("%s\r" % i, ends='')
+# for i in ["/","-","|","\\","|"]
+# print("%s\r" % i, ends='')
 # Can you replace """ with '''
