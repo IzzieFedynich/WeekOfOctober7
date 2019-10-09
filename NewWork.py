@@ -34,7 +34,7 @@ print("And everywhere that Mary went.")
 # A string being multiplied by a number and lot of periods
 print("." * 10)
 
-# CheeseBurger spelt out with a string 
+# CheeseBurger spelt out with a string
 end1 = "C"
 end2 = "h"
 end3 = "e"
@@ -61,3 +61,10 @@ print(formatter %(formatter, formatter, formatter, formatter))
 
 # Why did I use %r instead of %s
 
+# Time for some strange stuff in the world of printing...
+
+days = "Mon Tue Wed Thu Fri Sat Sun"
+months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+
+print("Here are the days:", days)
+print("Here are the months:", months)
