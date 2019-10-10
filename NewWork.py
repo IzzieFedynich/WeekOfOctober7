@@ -130,4 +130,4 @@ print(taskCat)
 age = input("How old are you? ")
 height = input("How tall are you? ")
 
-print("So, you're really %r old and %r tall? Wow..." %(age,height))
+print("So, you're really %r old and %r tall? Wow..." %(age, height))
