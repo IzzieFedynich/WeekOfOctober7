@@ -60,6 +60,7 @@ print(formatter %(formatter, formatter, formatter, formatter))
 # Formatter printed in different ways
 
 # Why did I use %r instead of %s
+# you use %r for variables and %s for strings
 
 
 # Time for some strange stuff in the world of printing...
@@ -81,6 +82,7 @@ Even 4 lines if we want, or 5, or 6.
 
 # What if I didn't like Jan being listed on the line with the rest of the
 # text and away from the other months? How could I fix that?
+# You could just add a \n space before it and it could be a proper list
 
 # More escaping
 
@@ -103,21 +105,49 @@ print(taskCat)
 
 # Escape Seq            What does it do
 # \\
-# \'
-# \"
-# \a
-# \b
-# \f
-# \n
-# \N{name}
-# \r
-# \t
-# \uxxx
-# \Uxxxxxx
-# \v
-# \ooo
-# \xhh
+# prints a backslash
 
+# \'
+# prints a single-quote
+
+# \"
+# prints a double quote
+
+# \a
+#
+
+# \b
+#
+
+# \f
+# form feed which makes the words diagonally spaced
+
+# \n
+# \n skips to the next line
+
+# \N{name}
+# prints characters
+
+# \r
+#
+
+# \t
+# tabs
+
+# \uxxxx
+# prints a 16-bit hex value unicode character Л
+
+# \Uxxxxxxxx
+# prints a 32-bit hex value unicode character Ʃ
+
+# \v
+#
+
+# \ooo
+# prints a character based on its hex value
+
+# \xhh
+# prints a character based on its hex value
 
 # What's the following code do:
 # While True:
